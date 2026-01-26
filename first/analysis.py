@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import glob
-# import time
 
 files = glob.glob('./measurements/*')
 
@@ -12,7 +11,6 @@ data = [ pd.read_csv(f, header=None, skiprows=3, names=['f', 'amplitude'])[:-18]
 
 #%%
 
-# tstart = time.time()
 
 n_skip_points = 15
 
@@ -27,5 +25,4 @@ for i, d in enumerate(data[:1]):
     plt.title(f'#{i+1} plot')
     plt.grid()
 
-# print(f'Took {time.time() - tstart} seconds.')
 # %%
