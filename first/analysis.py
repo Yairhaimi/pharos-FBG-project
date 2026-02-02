@@ -9,6 +9,9 @@
 # A z-offset should be set to fix this problem.
 # We took a microscope screen capture of the fiber's cross-section. This image should be analyzed in python or matlab in order to find the correct z-offset.
 # 
+# 2/2/26: Measured distance using a Python program I got from github. The distance is about 15.56 micrometers, or 0.0156 mm.
+#
+# Daily conclusion: need to set up a fab program with auto-focus (and read the manual), in order to get consistent z-height, so it's even possible to calculate a z-offset.
 #%% preamble
 
 import numpy as np
